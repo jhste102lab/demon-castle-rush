@@ -4,11 +4,6 @@
 
 플레이: https://jhste102lab.github.io/demon-castle-rush/
 
-## 한국어
-
-**마왕성 러시**는 특이점이 온다 마이너 갤러리의 게임 제작/플레이 대회 참여용으로 만든 웹 게임입니다.
-
-대회 글: https://gall.dcinside.com/mgallery/board/view/?id=thesingularity&no=1219923
 
 이 프로젝트의 핵심 구현은 `goal.md`에 담긴 단일 일괄 지시문을 기준으로 만들었습니다. 해당 프롬프트는 GPT Pro 5.5 extended thinking 환경에서 다듬은 뒤, 게임 전체 요구사항을 한 번에 전달하는 형태로 구성했습니다.
 
@@ -25,9 +20,6 @@
 
 ## English
 
-**Demon Castle Rush** is a browser game entry made for the Singularity Gallery game-making/play event on DCInside.
-
-Event post: https://gall.dcinside.com/mgallery/board/view/?id=thesingularity&no=1219923
 
 The core implementation was built from the single batch instruction stored in `goal.md`. The prompt was refined with GPT Pro 5.5 extended thinking and then used as a one-shot game specification.
 
