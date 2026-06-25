@@ -1,0 +1,45 @@
+version: 1
+mode: advisory
+installed_at: "2026-06-25T00:53:07.723Z"
+adapters:
+  codex: auto
+  claude: auto
+rules:
+  file_size_advisory:
+    mode: advisory
+    source_file_warning_lines: 300
+    source_file_review_lines: 300
+  responsibility_budget:
+    next_page_review_lines: 200
+    client_module_review_lines: 200
+    route_review_lines: 250
+    import_ops_script_review_lines: 280
+    python_orchestrator_review_lines: 600
+  single_responsibility_advisory:
+    mode: advisory
+    function_review_lines: 80
+    mixed_responsibility_hints: 3
+    module_export_family_hints: 4
+  extension_seam_advisory:
+    mode: advisory
+  dependency_boundary_advisory:
+    mode: advisory
+baseline:
+  enabled: false
+  path: .jhste/baseline.json
+guard:
+  default_scope: changed
+  default_format: text
+deep_scan:
+  last_run: null
+  report: .jhste/deep-scan-report.md
+  recommended_profile: .jhste/profile.recommended.yaml
+workflow:
+  final_review:
+    auto_for_non_trivial_code_changes: true
+    skip_when:
+      - docs_only
+      - comment_only
+      - formatting_only
+      - trivial_rename_only
+    max_fix_review_cycles: 2
